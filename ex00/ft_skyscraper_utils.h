@@ -6,7 +6,7 @@
 /*   By: krchuaip <krchuaip@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/12 14:41:44 by krchuaip          #+#    #+#             */
-/*   Updated: 2023/05/13 16:03:14 by krchuaip         ###   ########.fr       */
+/*   Updated: 2023/05/15 16:17:35 by krchuaip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,14 @@
 
 // SIZE
 # define SIZE 4
+
 // SIZE^2
 # define SIZE_SIZE 16
+
+// STDIO I/O
+# define STDIN_FILENO 0
+# define STDOUT_FILENO 1
+# define STDERR_FILENO 2
 
 void	ft_putnbr(int nb);
 void	ft_putchar(char c);

@@ -6,12 +6,13 @@
 /*   By: krchuaip <krchuaip@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/12 14:40:50 by krchuaip          #+#    #+#             */
-/*   Updated: 2023/05/13 15:11:41 by krchuaip         ###   ########.fr       */
+/*   Updated: 2023/05/15 16:16:32 by krchuaip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_skyscraper_utils.h"
 #include <stdlib.h>
+#include <unistd.h>
 
 int	solve(int tab[SIZE][SIZE], int entry[SIZE_SIZE], int pos)
 {
@@ -63,7 +64,7 @@ int	main(int argc, char **argv)
 
 	if (fail_check_arg(argc, argv))
 	{
-		ft_putstr("Error\n");
+		write(STDERR_FILENO, "Error\n", 6);
 		return (1);
 	}
 	entry = get_numbers(argv[1]);
@@ -71,7 +72,7 @@ int	main(int argc, char **argv)
 		print_solution(tab);
 	else
 	{
-		ft_putstr("Error\n");
+		write(STDERR_FILENO, "Error\n", 6);
 		return (1);
 	}
 	free(entry);

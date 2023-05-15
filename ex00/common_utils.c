@@ -6,7 +6,7 @@
 /*   By: krchuaip <krchuaip@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/12 15:22:29 by krchuaip          #+#    #+#             */
-/*   Updated: 2023/05/14 09:55:18 by krchuaip         ###   ########.fr       */
+/*   Updated: 2023/05/15 16:18:00 by krchuaip         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putchar(char c)
 {
-	write(1, &c, 1);
+	write(STDOUT_FILENO, &c, 1);
 }
 
 void	ft_putstr(char *str)
